@@ -930,7 +930,7 @@ end
 add_gem 'sendgrid' if prefer :email, 'sendgrid'
 
 ## Authentication (Devise)
-add_gem 'devise' if prefer :authentication, 'devise'
+add_gem 'devise', branch: 'rails4' if prefer :authentication, 'devise'
 add_gem 'devise_invitable' if prefer :devise_modules, 'invitable'
 
 ## Authentication (OmniAuth)
