@@ -853,9 +853,9 @@ else
 end
 
 ## Rails 4.0 attr_accessible Compatibility
-# if prefer :apps4, false
-#   add_gem 'protected_attributes' if rails_4?
-# end
+if prefer :apps4, false
+  add_gem 'protected_attributes' if rails_4?
+end
 
 ## Database Adapter
 unless prefer :database, 'default'
@@ -930,7 +930,7 @@ end
 add_gem 'sendgrid' if prefer :email, 'sendgrid'
 
 ## Authentication (Devise)
-add_gem 'devise', branch: 'rails4' if prefer :authentication, 'devise'
+add_gem 'devise' if prefer :authentication, 'devise'
 add_gem 'devise_invitable' if prefer :devise_modules, 'invitable'
 
 ## Authentication (OmniAuth)
