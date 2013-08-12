@@ -931,7 +931,7 @@ end
 add_gem 'sendgrid' if prefer :email, 'sendgrid'
 
 ## Authentication (Devise)
-add_gem 'devise', github: 'idl3/devise', branch: 'rails4' if prefer :authentication, 'devise'
+add_gem 'devise', '~> 3.0.0.rc' if prefer :authentication, 'devise'
 add_gem 'devise_invitable' if prefer :devise_modules, 'invitable'
 
 ## Authentication (OmniAuth)
